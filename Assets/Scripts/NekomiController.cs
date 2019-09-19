@@ -9,7 +9,7 @@ public class NekomiController : MonoBehaviour
 	//Publics
 	public float jumpForce = 1f;
 	public KeyCode jumpKey = KeyCode.Space;
-	public KeyCode mouseButton = KeyCode.Mouse0;
+	public KeyCode jumpMouseButton = KeyCode.Mouse0;
 	public ForceMode2D forceMode = ForceMode2D.Impulse;
 
 	[Tooltip("Objects that will kill the player upon collision")]
@@ -27,7 +27,7 @@ public class NekomiController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(jumpKey) || Input.GetKeyDown(mouseButton))
+		if (Input.GetKeyDown(jumpKey) || Input.GetKeyDown(jumpMouseButton))
 		{
 			OnJump.Invoke();
 			rb.velocity = Vector2.zero;
