@@ -18,7 +18,7 @@ public class PostMover : MonoBehaviour
 	void Update()
 	{
 		finalSpeed = (invertDirection) ? speed : -speed;
-		transform.Translate(new Vector3(finalSpeed, 0, 0));
+		transform.Translate(new Vector3(finalSpeed * Time.deltaTime, 0, 0));
 
 		if (Input.GetKeyDown(KeyCode.R))
 			GoBackToStart();
