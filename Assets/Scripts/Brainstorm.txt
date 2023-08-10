@@ -1,0 +1,21 @@
+Brainstorm
+
+Basic structure of the game
+• Floor and background texture scrolls
+• Posts are grouped together and move as a unit
+• Bird dies if it hits a Killer object
+	- Add torque
+	- Stop game
+	- Save highscore to playerprefs
+• Bird
+	- On input adds force to the bird
+	-
+• Killer objects: Pipes, Ground
+• Trigger detector behind the bird to detect once the bird has successfully cleared an obstacle, sends out an event
+• UI shows score
+
+Game
+	Holds the score
+	Restart game by reloading the scene
+	StartGame()
+		Hide
